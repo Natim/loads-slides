@@ -98,7 +98,7 @@ Results
     $ loads-runner loadtests.TestWebSite.test_something \
             --include-file loadstests.py \
             -u 200 --server-url http://2014.djangocon.eu
-    [=======================================================================] 100%
+    [==============================================================] 100%
     Duration: 2.87 seconds
     Hits: 200
     Started: 2014-05-09 16:13:38.219595

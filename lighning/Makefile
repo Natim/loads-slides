@@ -1,2 +1,2 @@
 all:
-	landslide index.rst
+	landslide config.cfg
