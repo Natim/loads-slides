@@ -74,8 +74,6 @@ Deploy a cluster
 - You need to start a loads-broker on you cluster master.
 - You need to start a loads-agent per node.
 
-We use `circus` to monitor `loads-broker` and `loads-agent` processes.
-
 You can use loads-runner with command line arguments as well as using a configuration file.
 
 ----
