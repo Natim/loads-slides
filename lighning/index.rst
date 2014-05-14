@@ -3,7 +3,7 @@ Loads — DjangoCon EU
 
 ----
 
-.. image:: logo.jpg
+.. image:: logo.png
 
 .. class:: center
 
@@ -27,7 +27,7 @@ It let you run a load test:
 
 - From a computer
 - From a local cluster
-- From a cloud cluster
+- From a remote cluster
 
 And it is always the same simple command::
 
@@ -59,6 +59,12 @@ You can just write a Python unittest:
             self.incr_counter('island-was-there')
 
 
+----
+
+
+How to write a test for loads
+=============================
+
 
 - `self.session` is a wrapper around `requests.Session` that will handle the load to a specific endpoint.
 - `self.app` is a similar wrapper around `WebTest` so that you can run the same tests on different endpoints or even use a functional test as loadtest.
@@ -69,10 +75,10 @@ You can just write a Python unittest:
 Deploy a cluster
 ================
 
-.. image:: loads.jpg
+.. image:: loads.png
 
 - You need to start a loads-broker on you cluster master.
-- You need to start a loads-agent per node.
+- You need to start one loads-agent per node.
 
 You can use loads-runner with command line arguments as well as using a configuration file.
 
@@ -121,7 +127,7 @@ Results
 The future of loads
 ===================
 
-.. image:: loads2.jpg
+.. image:: loads2.png
 
 - We are improving the architecture to reduce the bottleneck between
   `loads-broker` and `loads-agent` with a centralized database in the
